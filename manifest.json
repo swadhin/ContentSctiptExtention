@@ -1,0 +1,17 @@
+{
+  "name": "Content Script Click event Example",
+  "version": "2.0.0",
+  "description": "Demonstrates listening to Click event on facebook",
+  "permissions": ["history", "tabs", "bookmarks", "unlimitedStorage"], 	
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*","http://www.facebook.com/*"],
+      "js" : ["clickeventscript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
